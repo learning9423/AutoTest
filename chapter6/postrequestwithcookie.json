@@ -1,0 +1,24 @@
+[
+  {
+    "description": "post方法带cookie信息",
+    "request":{
+      "uri": "/post/with/cookie",
+      "method":"post",
+      "cookies":{
+        "login": "true"
+      },
+      "json":{
+        "name": "张昭",
+        "age": "17"
+      }
+    },
+    "response":{
+      "json":{
+        "text":"null",
+        "status":"ok"
+      },
+      "status": 200
+    }
+    }
+
+]

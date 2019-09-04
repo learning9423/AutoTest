@@ -1,0 +1,25 @@
+[
+  {
+    "description": "这是个重定向例子",
+    "request": {
+      "uri": "/getredir"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+  {
+    "description": "这是个重定向例子",
+    "request": {
+      "uri": "/getredir/to"
+    },
+    "redirectTo": "/redir/new"
+  },
+  {
+    "description": "这是个重定向例子",
+    "request": {
+      "uri": "/redir/new"
+    },
+   "response": {
+     "text": "没错你已经定位到了"
+   }
+  }
+]

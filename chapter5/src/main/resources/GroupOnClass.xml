@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="test">
+    <test name="groupOnClass">
+        <groups>
+            <run>
+                <include name="group3"/>
+            </run>
+        </groups>
+<!--        当存在类分组标签时，不执行classes标签-->
+        <classes>
+            <class name="com.course.testng.group.GroupOnClass1"></class>
+            <class name="com.course.testng.group.GroupOnClass2"></class>
+            <class name="com.course.testng.group.GroupOnClass3"></class>
+        </classes>
+    </test>
+</suite>

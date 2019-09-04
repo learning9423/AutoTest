@@ -1,0 +1,28 @@
+[
+  {
+    "description": "这是一个mock的post请求",
+    "request": {
+      "uri": "/postdemo",
+      "method": "post"
+
+    },
+    "response": {
+      "text": "这是一个post方法mock示例"
+    }
+  },
+  {
+    "description": "这是一个mock的post请求",
+    "request": {
+      "uri": "/postwithpara",
+      "method": "post",
+      "forms": {
+        "name": "张昭",
+        "age": "16"
+      }
+
+    },
+    "response": {
+      "text": "要到了张昭个人资料的时代了"
+    }
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "description": "这是get请求带cookie的例子",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "text": "get请求带cookie需要添加cookie信息",
+      "cookies": {
+        "login": "true"
+      }
+    }
+  },
+  {
+    "description": "这是get请求带cookie的例子",
+    "request": {
+      "uri": "/setCookies",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "带cookie的请求返回信息",
+      "cookies": {
+        "login": "true",
+        "message": "ok",
+        "status": "success"
+      }
+    }
+    },
+  {
+    "description": "这是post请求带cookie的例子",
+    "request": {
+      "uri": "/postCookies",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "张昭",
+        "age": "18"
+      },
+      "headers":{
+        "content-type": "application/json"
+      }
+    },
+    "response": {
+      "cookies": {
+        "login": "true",
+        "message": "ok",
+        "status": "success"
+      },
+      "json": {
+        "name": "张昭",
+        "age": "18",
+        "message": "ok"
+      }
+    }
+  }
+
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "description": "post请求添加header",
+    "request": {
+      "uri": "/post/with/headers",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "headers": {
+        "content-type": "application/json;charset=utf-8"
+      },
+      "json": {
+        "name": "张昭",
+        "age": "18"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "status": "success",
+        "message": "你是个好人"
+      }
+    }
+  }
+]
